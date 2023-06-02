@@ -1,0 +1,79 @@
+body{
+font-family: 'Public Sana', sans-serif;
+
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: #000;
+}
+
+a{
+    text-decoration: nome;
+}
+
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*cabecalho-container-header*/
+
+.cabecalho-container {
+    display: flex;
+
+}
+
+.cabecalho{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+   justify-content:space-between;
+   margin-left: 105px;
+   margin-right:105px;
+    
+}
+.cabecalho .logo{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+   
+}
+.cabecalho .logo .texto{
+   
+    margin: 35px;
+    
+}
+.cabecalho .menu{
+    display: flex;
+    
+}
+
+.cabecalho .navegacao .menu .item{
+    margin:20px;
+   
+}
+
+.cabecalho .navegacao .menu .item a{
+    padding:px;
+   
+    
+
+
+}
+.cabecalho .navegacao .menu .item a:hover{
+    background-color: aqua;
+    color: aliceblue;
+  
+}
+
+/*secao-icones*/
+
+
+/*quem-somos*/
+/*Contato*/
+/*rodape*/
+
+

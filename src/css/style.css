@@ -1,109 +1,165 @@
-body{
-font-family: 'Public Sana', sans-serif;
-display: grid;
-grid-template-areas: "cabecalho cabecalho cabecalho cabecalho"
-"secao-icones secao-icones secao-icones secao-icones"
-"projetos projetos projetos projetos "
-"quem-somos quem-somos quem-somos quem-somos"
-"contato contato contato contato"
-"rodape rodape rodape rodape";
-grid-template-columns: repeat(4.1fr);
+body {
+    font-family: 'Public Sana', sans-serif;
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho"
+        "secao-icones secao-icones secao-icones secao-icones"
+        "projetos projetos projetos projetos "
+        "quem-somos quem-somos quem-somos quem-somos"
+        "contato contato contato contato"
+        "rodape rodape rodape rodape";
+    grid-template-columns: repeat(4.1fr);
+    background-color: rgb(0,159,157);
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-color: #000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
 }
 
-a{
+a {
     text-decoration: nome;
 }
 
-ul{
+ul {
     list-style: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /*cabecalho-container-header*/
 
 .cabecalho {
-    grid-template-areas: cabecalho-container;
-    
+    grid-template-areas: cabecalho;
+
 
 }
 
-.cabecalho-container{
+.cabecalho-container {
     display: flex;
     margin-top: 20px;
     align-items: center;
-   justify-content:space-between;
-   min-height: 75px;
-   margin-left: 105px;
-   margin-right:105px;
-    
+    justify-content: space-between;
+    min-height: 75px;
+    margin-left: 105px;
+    margin-right: 105px;
+
 }
-.cabecalho .logo{
+
+.cabecalho .logo {
     display: flex;
     align-items: center;
     margin: 15px;
-   
+
 }
-.cabecalho h1{
-   transition: 0.3s;
+
+.cabecalho h1 {
+    transition: 0.3s;
     margin: 35px;
-    
+
 }
-.cabecalho  a:hover h1{
+
+.cabecalho a:hover h1 {
     color: blue;
-     
-     
- }
-.cabecalho .menu{
+
+
+}
+
+.cabecalho .menu {
     display: flex;
-    
-}
-
-.cabecalho .navegacao .menu .item{
-    margin:20px;
-   
-}
-
-.cabecalho .navegacao .menu .item a{
-    padding:px;
-   
-    
-
 
 }
-.cabecalho .navegacao .menu .item a:hover{
-    background-color: aqua;
+
+.cabecalho .navegacao {
+    display: flex;
+
+}
+
+.cabecalho .navegacao .menu .item {
+    margin: 20px;
+
+}
+
+.cabecalho .navegacao .menu .item a {
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s;
+
+
+}
+
+.cabecalho .navegacao .menu .item a:hover {
+    background-color: rgb(25, 29, 29);
     color: aliceblue;
-  
+
+}
+/*responsive*/
+.cabecalho .menu-h{
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho .hambuguer{
+    background-color: black;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho .hamburguer:before,
+.cabecalho .hambuguer:after{
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
 }
 
 /*secao-icones*/
-.secao-icones{
-    grid-area:secao-icones ;
+/*secao-icones*/
+.secao-icones {
+    grid-area: secao-icones;
     background-color: rgb(138, 13, 107);
+    display: flex;
+}
+
+.div-secao {
+    display: flex;
+   justify-content: center;
+   
+   
+}
+
+.secao-icones .div-secao a {
+    margin-right: 150px;
+padding: 150px;
 }
 
 /*quem-somos*/
-.quem-somos{
-    grid-area:quem-somos ;
+.quem-somos {
+    grid-area: quem-somos;
     background-color: rgb(214, 106, 17);
 }
+
 /*Contato*/
-.contato{
+.contato {
     grid-area: contato;
     background-color: rgb(195, 228, 10);
 }
+
 /*rodape*/
-.rodape{
- grid-area:rodape ;
- background-color: rgb(9, 121, 84);
+.rodape {
+    grid-area: rodape;
+    background-color: rgb(9, 121, 84);
 }
-
-

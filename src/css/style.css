@@ -8,7 +8,7 @@ body {
         "contato contato contato contato"
         "rodape rodape rodape rodape";
     grid-template-columns: repeat(4.1fr);
-    background-color: rgb(0,159,157);
+    background-color: rgb(0, 159, 157);
 }
 
 * {
@@ -97,14 +97,15 @@ html {
     color: aliceblue;
 
 }
+
 /*responsive*/
-.cabecalho .menu-h{
+.cabecalho .menu-h {
     display: none;
     width: 60px;
     height: 60px;
 }
 
-.cabecalho .hambuguer{
+.cabecalho .hamburguer {
     background-color: black;
     position: relative;
     display: block;
@@ -116,7 +117,7 @@ html {
 }
 
 .cabecalho .hamburguer:before,
-.cabecalho .hambuguer:after{
+.cabecalho .hamburguer:after {
     background-color: #000;
     content: "";
     display: block;
@@ -126,26 +127,59 @@ html {
     transition: 0.2s ease-in-out;
 }
 
+.cabecalho .hamburguer:before {
+    top: -10px;
+}
+
+.cabecalho .hamburguer:after {
+    bottom: -10px;
+}
+
+.cabecalho input {
+    display: none;
+
+}
+
+.cabecalho input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.cabecalho input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.cabecalho input:checked~label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+
 /*secao-icones*/
 /*secao-icones*/
-.secao-icones {
+#secaoicones {
     grid-area: secao-icones;
     background-color: rgb(138, 13, 107);
+    
+}
+
+#div-secao{
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  
+
 }
 
-.div-secao {
+.secao-icones #div-secao a img {
     display: flex;
-   justify-content: center;
-   
    
 }
-
-.secao-icones .div-secao a {
-    margin-right: 150px;
-padding: 150px;
+/*projetos*/
+.projetos{
+    grid-area:projetos ;
+    background-color: coral;
 }
-
 /*quem-somos*/
 .quem-somos {
     grid-area: quem-somos;
